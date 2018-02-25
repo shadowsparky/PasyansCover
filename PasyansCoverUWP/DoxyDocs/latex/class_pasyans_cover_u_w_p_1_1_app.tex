@@ -1,0 +1,103 @@
+\hypertarget{class_pasyans_cover_u_w_p_1_1_app}{}\section{Класс Pasyans\+Cover\+U\+W\+P.\+App}
+\label{class_pasyans_cover_u_w_p_1_1_app}\index{Pasyans\+Cover\+U\+W\+P.\+App@{Pasyans\+Cover\+U\+W\+P.\+App}}
+
+
+Обеспечивает зависящее от конкретного приложения поведение, дополняющее класс Application по умолчанию.  
+
+
+
+
+Базовые классы\+:Application.
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_pasyans_cover_u_w_p_1_1_app_afd24d3b5e2849dcc9fdc1d27108b740e}{App} ()
+\begin{DoxyCompactList}\small\item\em Инициализирует одноэлементный объект приложения. Это первая выполняемая строка разрабатываемого кода; поэтому она является логическим эквивалентом main() или Win\+Main(). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_pasyans_cover_u_w_p_1_1_app_a263ee204ae6f7ebb28a3b8fb8cce8d71}{On\+Launched} (Launch\+Activated\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Вызывается при обычном запуске приложения пользователем. Будут использоваться другие точки входа, например, если приложение запускается для открытия конкретного файла. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_pasyans_cover_u_w_p_1_1_app_afb3b9941368b3471b0963cca63d3aad9}{On\+Navigation\+Failed} (object sender, Navigation\+Failed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Вызывается в случае сбоя навигации на определенную страницу \end{DoxyCompactList}\item 
+void \hyperlink{class_pasyans_cover_u_w_p_1_1_app_ac6a96abb073dd70340b917f4e7ef9762}{On\+Suspending} (object sender, Suspending\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Вызывается при приостановке выполнения приложения. Состояние приложения сохраняется без учета информации о том, будет ли оно завершено или возобновлено с неизменным содержимым памяти. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Обеспечивает зависящее от конкретного приложения поведение, дополняющее класс Application по умолчанию. 
+
+
+
+\subsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_app_afd24d3b5e2849dcc9fdc1d27108b740e}\label{class_pasyans_cover_u_w_p_1_1_app_afd24d3b5e2849dcc9fdc1d27108b740e}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+App@{Pasyans\+Cover\+U\+W\+P\+::\+App}!App@{App}}
+\index{App@{App}!Pasyans\+Cover\+U\+W\+P\+::\+App@{Pasyans\+Cover\+U\+W\+P\+::\+App}}
+\subsubsection{\texorpdfstring{App()}{App()}}
+{\footnotesize\ttfamily Pasyans\+Cover\+U\+W\+P.\+App.\+App (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Инициализирует одноэлементный объект приложения. Это первая выполняемая строка разрабатываемого кода; поэтому она является логическим эквивалентом main() или Win\+Main(). 
+
+
+
+\subsection{Методы}
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_app_a263ee204ae6f7ebb28a3b8fb8cce8d71}\label{class_pasyans_cover_u_w_p_1_1_app_a263ee204ae6f7ebb28a3b8fb8cce8d71}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+App@{Pasyans\+Cover\+U\+W\+P\+::\+App}!On\+Launched@{On\+Launched}}
+\index{On\+Launched@{On\+Launched}!Pasyans\+Cover\+U\+W\+P\+::\+App@{Pasyans\+Cover\+U\+W\+P\+::\+App}}
+\subsubsection{\texorpdfstring{On\+Launched()}{OnLaunched()}}
+{\footnotesize\ttfamily override void Pasyans\+Cover\+U\+W\+P.\+App.\+On\+Launched (\begin{DoxyParamCaption}\item[{Launch\+Activated\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Вызывается при обычном запуске приложения пользователем. Будут использоваться другие точки входа, например, если приложение запускается для открытия конкретного файла. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em e} & Сведения о запросе и обработке запуска.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_app_afb3b9941368b3471b0963cca63d3aad9}\label{class_pasyans_cover_u_w_p_1_1_app_afb3b9941368b3471b0963cca63d3aad9}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+App@{Pasyans\+Cover\+U\+W\+P\+::\+App}!On\+Navigation\+Failed@{On\+Navigation\+Failed}}
+\index{On\+Navigation\+Failed@{On\+Navigation\+Failed}!Pasyans\+Cover\+U\+W\+P\+::\+App@{Pasyans\+Cover\+U\+W\+P\+::\+App}}
+\subsubsection{\texorpdfstring{On\+Navigation\+Failed()}{OnNavigationFailed()}}
+{\footnotesize\ttfamily void Pasyans\+Cover\+U\+W\+P.\+App.\+On\+Navigation\+Failed (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Navigation\+Failed\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Вызывается в случае сбоя навигации на определенную страницу 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em sender} & Фрейм, для которого произошел сбой навигации\\
+\hline
+{\em e} & Сведения о сбое навигации\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_app_ac6a96abb073dd70340b917f4e7ef9762}\label{class_pasyans_cover_u_w_p_1_1_app_ac6a96abb073dd70340b917f4e7ef9762}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+App@{Pasyans\+Cover\+U\+W\+P\+::\+App}!On\+Suspending@{On\+Suspending}}
+\index{On\+Suspending@{On\+Suspending}!Pasyans\+Cover\+U\+W\+P\+::\+App@{Pasyans\+Cover\+U\+W\+P\+::\+App}}
+\subsubsection{\texorpdfstring{On\+Suspending()}{OnSuspending()}}
+{\footnotesize\ttfamily void Pasyans\+Cover\+U\+W\+P.\+App.\+On\+Suspending (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Suspending\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Вызывается при приостановке выполнения приложения. Состояние приложения сохраняется без учета информации о том, будет ли оно завершено или возобновлено с неизменным содержимым памяти. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em sender} & Источник запроса приостановки.\\
+\hline
+{\em e} & Сведения о запросе приостановки.\\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/Евгений/\+Documents/\+Visual Studio 2017/\+Projects/\+Pasyans\+Cover\+U\+W\+P/\+Pasyans\+Cover\+U\+W\+P/\hyperlink{_app_8xaml_8cs}{App.\+xaml.\+cs}\end{DoxyCompactItemize}

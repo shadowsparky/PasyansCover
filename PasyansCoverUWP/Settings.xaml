@@ -1,0 +1,47 @@
+﻿<Page
+    x:Class="PasyansCoverUWP.Settings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PasyansCoverUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="SettingsGrid">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="White" Offset="0.133"/>
+                <GradientStop Color="#FF515C6B" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="Normal">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger 
+                            MinWindowHeight="543"
+                            MinWindowWidth="726"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="SettingsName.Visibility" Value="Visible"/>
+                        <Setter Target="Copyright.Visibility" Value="Visible"/>
+                        <Setter Target="CheckWinnerMode.Visibility" Value="Visible"/>
+                        <Setter Target="GoToMenuButton.Visibility" Value="Visible"/>
+                        <Setter Target="Error.Visibility" Value="Collapsed"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+
+
+        <TextBlock x:Uid="Settings_Name" x:Name="SettingsName" Margin="0,47,0,0" TextWrapping="Wrap" Text="Настройки" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Collapsed"/>
+        <TextBlock x:Uid="Settings_Copyright" x:Name="Copyright" TextWrapping="Wrap" Text="AVB INC. 2017 " HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" Visibility="Collapsed"/>
+        <TextBlock x:Uid="Settings_Error" x:Name="Error" HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="Растяните окно побольше, пожалуйста" VerticalAlignment="Center" FontWeight="Bold" Visibility="Visible"/>
+        <CheckBox x:Uid="Settings_CheckWinnerMode" x:Name="CheckWinnerMode" Visibility="Collapsed" Content="Включить режим победителя" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center"/>
+        <Button x:Uid="Settings_GoToMenuButtons" x:Name="GoToMenuButton" Visibility="Collapsed" Content="Вернуться в меню" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Center" Width="327" Height="38" Click="GoToMenuButton_Click"/>
+
+
+    </Grid>
+</Page>

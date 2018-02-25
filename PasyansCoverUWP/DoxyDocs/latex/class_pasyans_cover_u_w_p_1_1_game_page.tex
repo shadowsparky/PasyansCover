@@ -1,0 +1,910 @@
+\hypertarget{class_pasyans_cover_u_w_p_1_1_game_page}{}\section{Класс Pasyans\+Cover\+U\+W\+P.\+Game\+Page}
+\label{class_pasyans_cover_u_w_p_1_1_game_page}\index{Pasyans\+Cover\+U\+W\+P.\+Game\+Page@{Pasyans\+Cover\+U\+W\+P.\+Game\+Page}}
+
+
+Класс, который используется на странице игры  
+
+
+
+
+Базовые классы\+:Page.
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a321f58ca276bdbc44b53589d75206a75}{Set\+True\+Winner\+Check\+Mode} ()
+\begin{DoxyCompactList}\small\item\em Включение режима победителя \end{DoxyCompactList}\item 
+void \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a4de163f8a87e5dac6f4ef06360cdaa40}{Set\+False\+Winner\+Check\+Mode} ()
+\begin{DoxyCompactList}\small\item\em Выключение режима победителя \end{DoxyCompactList}\item 
+\hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_ae93f35d902ec5fbb566632b0dc5e0b59}{Game\+Page} ()
+\begin{DoxyCompactList}\small\item\em Инициализация страницы. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Статические открытые данные}
+\begin{DoxyCompactItemize}
+\item 
+static readonly Dependency\+Property \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_aeb2b54ad9c536fab826a7a7f1447f3da}{Set\+And\+Get\+Best\+Magic\+Card\+Image\+Value\+Property}
+\begin{DoxyCompactList}\small\item\em Переменная, которая позволяет привязывать значения карт прямо к I\+M\+A\+GE. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_ac8a85033f2127c25b60c0f0c82e7eefb}{Game\+\_\+\+Loaded} (object sender, Routed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Процедура, срабатывающая при загрузке страницы. \end{DoxyCompactList}\item 
+void \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a4d7e48fd54d238c77192dc04fb3f64a4}{Save\+Image\+Inside} (object sender, Routed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Сохраняет данные, передаваемые пользователем в переменную. \end{DoxyCompactList}\item 
+void \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a573a74360ad3cd3f0b191668a7c69e93}{Image\+\_\+\+Drag\+Over} (object sender, Drag\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Событие происходит при наведении одной карты на другую. \end{DoxyCompactList}\item 
+bool \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a03b4af2d9a04735bbc7e7d6331d220d4}{Check\+Rows} (int minN, int maxN, int N)
+\begin{DoxyCompactList}\small\item\em Проверка на окончание игры №1. \end{DoxyCompactList}\item 
+bool \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_acfb646ae22c904f6afb4b226b7d8188e}{Check\+Row\+Ex} (int n)
+\begin{DoxyCompactList}\small\item\em Проверка на окончание игры №2. \end{DoxyCompactList}\item 
+bool \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_add7dd4a8c8e74aa19f6042801eb45da3}{Check\+Game\+End} ()
+\begin{DoxyCompactList}\small\item\em Проверка на окончание игры №2. \end{DoxyCompactList}\item 
+async void \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_aa682318ae23a5287134042c6fee5bd21}{Image\+\_\+\+Drop} (object sender, Drag\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Событие, срабатывающее при переносе карты на другую. \end{DoxyCompactList}\item 
+void \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a90a511fcd533f56ae276b2eab9751e20}{Return\+To\+Menu\+\_\+\+Click} (object sender, Routed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Перемещение в меню. \end{DoxyCompactList}\item 
+async void \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_af17d3b02f3db6ba2e95e1d735abfdece}{Button\+\_\+\+Click} (object sender, Routed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em {\itshape Читы} Выигрыш происходит при нажатии на кнопку. \end{DoxyCompactList}\item 
+void \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_ab96dd33188b7ebb2a6f40110fe2d4cb5}{Triggered} (double Size\+Resize)
+\begin{DoxyCompactList}\small\item\em Процедура для адаптивного дизайна. \end{DoxyCompactList}\item 
+void \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a062bef918b47d0786b00d1f1738fdfa8}{Game\+\_\+\+Size\+Changed} (object sender, Size\+Changed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Событие изменения размера приложения. \end{DoxyCompactList}\item 
+void \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a204ffa1fc3084fe28bef4826572bbc22}{Restart\+Button\+\_\+\+Click} (object sender, Routed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Начинание игры заново. \end{DoxyCompactList}\item 
+async void \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a31a97c290129f77a91f790207391350c}{Advert\+Image\+\_\+\+Tapped} (object sender, Tapped\+Routed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Процедура с рекламой. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a4ad4b7e54cbe7dad538eb1eb3c4f9690}{Start\+CordX} = 10
+\begin{DoxyCompactList}\small\item\em Координата Х по умолчанию слева. \end{DoxyCompactList}\item 
+const int \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_ace653fbd9e4a20124d9591f75748738e}{Null\+Row} = 0
+\begin{DoxyCompactList}\small\item\em Первый ряд карт. Поскольку это с\#, то все начинается с 0, а не 1. \end{DoxyCompactList}\item 
+const int \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a120ab62da97a1692416b0840ef726e49}{One\+Row} = 10
+\begin{DoxyCompactList}\small\item\em Второй ряд карт. Поскольку это с\#, то все начинается с 0, а не 1. \end{DoxyCompactList}\item 
+const int \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a815d76a3c2a50ae107f10275e2574285}{Two\+Row} = 20
+\begin{DoxyCompactList}\small\item\em Третий ряд карт. Поскольку это с\#, то все начинается с 0, а не 1. \end{DoxyCompactList}\item 
+const int \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_aabcd571572c00c2e8f761cf220555357}{Three\+Row} = 30
+\begin{DoxyCompactList}\small\item\em Четвертый ряд карт. Поскольку это с\#, то все начинается с 0, а не 1. \end{DoxyCompactList}\item 
+const int \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a11ecf48c9c1ae48e3b1bf8c287cbc909}{Default\+Card\+Width} = 74
+\begin{DoxyCompactList}\small\item\em Стандартная ширина карты. Она используется при динамическом создании карты. \end{DoxyCompactList}\item 
+const int \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a5458c54c117e7ff5f98235839e596943}{Default\+Card\+Height} = 99
+\begin{DoxyCompactList}\small\item\em Стандартная высота карты. Она используется при динамическом создании карты. \end{DoxyCompactList}\item 
+const int \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a44897cf4110fd61d040588f182178def}{Default\+Card\+Number} = 36
+\begin{DoxyCompactList}\small\item\em Количество карт по-\/умолчанию. Это версия игры на 36 карт, поэтому их 36. \end{DoxyCompactList}\item 
+const int \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_af512b41a55021eba0dafb53dac089916}{Default\+Array\+Size} = 40
+\begin{DoxyCompactList}\small\item\em К количеству карт по-\/умолчанию ещё добавляются 4 пустые карты. Это полное кол-\/во карт, которое будет располагаться на странице. \end{DoxyCompactList}\item 
+const int \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a2274460b85cbcd4a6d15edbf55a7b1d0}{Default\+Empty\+Card\+Value} = 99
+\begin{DoxyCompactList}\small\item\em Пустая карта обозначается как 99. \end{DoxyCompactList}\item 
+const int \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_ab7c545b8afa290af58491cbcdd2c785f}{Default\+Row\+Number} = 4
+\begin{DoxyCompactList}\small\item\em Количество рядов с картами внутри игры. Их 4. \end{DoxyCompactList}\item 
+const int \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_aa3cf4f53575e93818fffbdf3c04384ed}{Default\+Col\+Number} = 10
+\begin{DoxyCompactList}\small\item\em Количество карт в одном ряде. Их всего 10. \end{DoxyCompactList}\item 
+const int \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_ab5e0a4bb6c6e77d8f725182748803fc7}{End\+One\+Epty\+Card\+Position} = 9
+\begin{DoxyCompactList}\small\item\em Последняя карта в первом ряде. \end{DoxyCompactList}\item 
+const int \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a8e347fd1f214283527b2cb865f4ee9b0}{End\+Two\+Epty\+Card\+Position} = 19
+\begin{DoxyCompactList}\small\item\em Последняя карта во втором ряде. \end{DoxyCompactList}\item 
+const int \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a02e5496db08f9378c5e45e5fb1f082a1}{End\+Three\+Epty\+Card\+Position} = 29
+\begin{DoxyCompactList}\small\item\em Последняя карта в третьем ряде. \end{DoxyCompactList}\item 
+const int \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_ae99d856c36c65337c9b2d029d6b348d4}{End\+Four\+Epty\+Card\+Position} = 39
+\begin{DoxyCompactList}\small\item\em Последяя карта в четвертом ряде. \end{DoxyCompactList}\item 
+const int \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a35b73571b9f97eec178604f4459d1af2}{Standart\+Cord\+Y\+Change} = 120
+\begin{DoxyCompactList}\small\item\em Стандартное изменение координаты Y при расстановке карт. \end{DoxyCompactList}\item 
+const int \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_aa61e21ef4cdac5b45ff280528dc5611e}{Standart\+Cord\+X\+Change} = 85
+\begin{DoxyCompactList}\small\item\em Стандартное изменение координаты Х при расстановке карт. В новых обновлениях эта константа роли играет мало, т.\+к появился адаптивный дизайн. \end{DoxyCompactList}\item 
+const int \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_ab0e63c0232b1953700a7765c3725c9d1}{Adaptive\+Design\+Kostil1} = 900
+\begin{DoxyCompactList}\small\item\em \char`\"{}Костыль\char`\"{} для адаптивного дизайна. Благодаря этой координате первые карты слева получают возможность быть адаптивными. \end{DoxyCompactList}\item 
+const int \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a367926b010ff358ac0648ef18d176a7a}{Adaptive\+Design\+Kostil2} = 1128
+\begin{DoxyCompactList}\small\item\em \char`\"{}Костыль\char`\"{} для адаптивного дизайна. Благодаря этой координате первые карты слева получают возможность быть адаптивными. \end{DoxyCompactList}\item 
+const double \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a00d87ca420d0de18549672216f60e196}{Adaptive\+Design\+Standart\+Multiplication} = 0.\+1
+\begin{DoxyCompactList}\small\item\em Стандартное умножение для работы адаптивного дизайна. Текущий размер по ширине умножается на это число и карты начинают располагаться так, как нужно. \end{DoxyCompactList}\item 
+const int \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a27a1a6eef955f572e3863062d33d2bc7}{Club\+Ace} = 0
+\begin{DoxyCompactList}\small\item\em Расположение туза треф в колоде по-\/умолчанию. \end{DoxyCompactList}\item 
+const int \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a8214dbd1854ae65cd9f59b3f8246910b}{Heart\+Ace} = 9
+\begin{DoxyCompactList}\small\item\em Расположение туза черв в колоде по-\/умолчанию. \end{DoxyCompactList}\item 
+const int \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_afaebf6ffd47185bb4fa3b7a868eab00d}{Spade\+Ace} = 18
+\begin{DoxyCompactList}\small\item\em Расположение туза пик в колоде по-\/умолчанию. \end{DoxyCompactList}\item 
+const int \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a086c2eca6aa451a0dd28f5dafc09cf46}{Diamond\+Ace} = 27
+\begin{DoxyCompactList}\small\item\em Расположение туза бубен в колоде по-\/умолчанию. \end{DoxyCompactList}\item 
+bool \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_ae00bab0ead88cf9738f730eb1ef7c055}{Check\+Initialization} = false
+\begin{DoxyCompactList}\small\item\em Проверка инициализации карт, чтобы их нельзя было делать адаптивными до того, как они появятся. \end{DoxyCompactList}\item 
+Image \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a08f63dfbfa1adc1774f5dbfaad379cde}{global\+\_\+save}
+\begin{DoxyCompactList}\small\item\em Копия карты, которую пользователь начинает передвигать \end{DoxyCompactList}\item 
+Image \mbox{[}$\,$\mbox{]} \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a128b0510c61dbb4bc48f6fadffe2cbf8}{Best\+Image\+Data\+Saver} = new Image\mbox{[}\hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_af512b41a55021eba0dafb53dac089916}{Default\+Array\+Size}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Массив, хранящий все карты, которые имеются на странице. \end{DoxyCompactList}\item 
+Image \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_aff9c7aa4353b39d3d9372aaa0fa1fbb3}{Best\+Magic\+Card}
+\begin{DoxyCompactList}\small\item\em Макет карты, с которым производится работа в процедуре. \end{DoxyCompactList}\item 
+int \mbox{[}$\,$\mbox{]} \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a4749dec0871a8794a50eace45a1f6db1}{Best\+Magic\+Array\+For\+Best\+Magic\+Cards} = new int\mbox{[}\hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_af512b41a55021eba0dafb53dac089916}{Default\+Array\+Size}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Массив, хранящий все значения карт, которые имеются на странице. \end{DoxyCompactList}\item 
+double \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a80770c7db0993da166101ef31303ebce}{CordX} = 10
+\begin{DoxyCompactList}\small\item\em Координата X на странице. \end{DoxyCompactList}\item 
+double \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a6a952abad53185856ccbaa26b846b6c4}{CordY} = 1
+\begin{DoxyCompactList}\small\item\em Координата Y на странице. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Закрытые статические данные}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_a2bf9a3300a4ab635aeb61d6cf6c2ee13}{Winner\+Mode\+Check} = false
+\begin{DoxyCompactList}\small\item\em Переменная, которая используется в качестве облегчения игры для пользователей. Благодаря ей, пользователь сам решает для себя -\/ прошел он игру или нет. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Класс, который используется на странице игры 
+
+\begin{DoxyAuthor}{Автор}
+Евгений 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+B\+E\+TA 0.\+2.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+Ноябрь 2017 года
+\end{DoxyDate}
+В этом классе содержатся все процедуры/функции, алгоритмы, которые необходимы для игры. \begin{DoxyWarning}{Предупреждения}
+Поскольку это B\+E\+TA версия, то любая из процедур/функций/констант/переменных может в любой момент исчезнуть, если разработчик посчитает это нужным. 
+\end{DoxyWarning}
+\begin{DoxyRefDesc}{Необходимо сделать}
+\item[\hyperlink{todo__todo000001}{Необходимо сделать}]Отделение логики от дизайна. Дизайн может обращаться к логике, логика не может обращаться к дизайну. \end{DoxyRefDesc}
+\begin{DoxyCopyright}{Авторство}
+Все права на этот класс принадлежат разработчикам из A\+VB inc. 
+\end{DoxyCopyright}
+
+
+\subsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_ae93f35d902ec5fbb566632b0dc5e0b59}\label{class_pasyans_cover_u_w_p_1_1_game_page_ae93f35d902ec5fbb566632b0dc5e0b59}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Game\+Page@{Game\+Page}}
+\index{Game\+Page@{Game\+Page}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Game\+Page()}{GamePage()}}
+{\footnotesize\ttfamily Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Game\+Page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Инициализация страницы. 
+
+\begin{DoxyAuthor}{Автор}
+Microsoft 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+B\+E\+TA 0.\+2.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+Ноябрь 2017 года 
+\end{DoxyDate}
+
+
+\subsection{Методы}
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a31a97c290129f77a91f790207391350c}\label{class_pasyans_cover_u_w_p_1_1_game_page_a31a97c290129f77a91f790207391350c}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Advert\+Image\+\_\+\+Tapped@{Advert\+Image\+\_\+\+Tapped}}
+\index{Advert\+Image\+\_\+\+Tapped@{Advert\+Image\+\_\+\+Tapped}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Advert\+Image\+\_\+\+Tapped()}{AdvertImage\_Tapped()}}
+{\footnotesize\ttfamily async void Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Advert\+Image\+\_\+\+Tapped (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Tapped\+Routed\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Процедура с рекламой. 
+
+\begin{DoxyAuthor}{Автор}
+Евгений 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+B\+E\+TA 0.\+2.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+Ноябрь 2017 года
+\end{DoxyDate}
+Если пользователь нажмет на рекламу, то эта процедура открой сайт рекламодателя. 
+\begin{DoxyParams}{Аргументы}
+{\em sender} & Содержит в себе информацию, о том, что сделал пользователь. \\
+\hline
+{\em e} & Предоставляет данные для этого события \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_af17d3b02f3db6ba2e95e1d735abfdece}\label{class_pasyans_cover_u_w_p_1_1_game_page_af17d3b02f3db6ba2e95e1d735abfdece}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Button\+\_\+\+Click@{Button\+\_\+\+Click}}
+\index{Button\+\_\+\+Click@{Button\+\_\+\+Click}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Button\+\_\+\+Click()}{Button\_Click()}}
+{\footnotesize\ttfamily async void Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Button\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Routed\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+{\itshape Читы} Выигрыш происходит при нажатии на кнопку. 
+
+\begin{DoxyAuthor}{Автор}
+Евгений 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+B\+E\+TA 0.\+2.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+Ноябрь 2017 года
+\end{DoxyDate}
+Если пользователь включит режим победителя и нажмет на невидимую кнопку, то он сразу же выиграет. Все благодаря этой кнопке. 
+\begin{DoxyParams}{Аргументы}
+{\em sender} & Содержит в себе информацию, о том, что сделал пользователь. \\
+\hline
+{\em e} & Содержит информацию о состоянии и данные события, связанные с маршрутизируемым событием. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_add7dd4a8c8e74aa19f6042801eb45da3}\label{class_pasyans_cover_u_w_p_1_1_game_page_add7dd4a8c8e74aa19f6042801eb45da3}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Check\+Game\+End@{Check\+Game\+End}}
+\index{Check\+Game\+End@{Check\+Game\+End}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Check\+Game\+End()}{CheckGameEnd()}}
+{\footnotesize\ttfamily bool Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Check\+Game\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Проверка на окончание игры №2. 
+
+\begin{DoxyAuthor}{Автор}
+Евгений 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+B\+E\+TA 0.\+2.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+Ноябрь 2017 года
+\end{DoxyDate}
+Функция, проверяющая сразу 4 ряда карт, используя 1 функцию. 
+\begin{DoxyParams}{Аргументы}
+{\em minN} & первая N (туз)  maxN последний N \\
+\hline
+{\em N} & значение проверяемого ряда карт. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Если карты не соответсвуют алгоритму, который используется в пасьянсе ковёр для конкретного ряда карт, то функция возвратит False, если соответсвует, то True. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_acfb646ae22c904f6afb4b226b7d8188e}\label{class_pasyans_cover_u_w_p_1_1_game_page_acfb646ae22c904f6afb4b226b7d8188e}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Check\+Row\+Ex@{Check\+Row\+Ex}}
+\index{Check\+Row\+Ex@{Check\+Row\+Ex}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Check\+Row\+Ex()}{CheckRowEx()}}
+{\footnotesize\ttfamily bool Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Check\+Row\+Ex (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Проверка на окончание игры №2. 
+
+\begin{DoxyAuthor}{Автор}
+Евгений 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+B\+E\+TA 0.\+2.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+Ноябрь 2017 года
+\end{DoxyDate}
+Функция, проверяющая полностью ряд карт, используя 1 функцию. 
+\begin{DoxyParams}{Аргументы}
+{\em minN} & первая N (туз)  maxN последний N \\
+\hline
+{\em N} & значение проверяемого ряда карт. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Если карты не соответсвуют алгоритму, который используется в пасьянсе ковёр для конкретного ряда карт, то функция возвратит False, если соответсвует, то True. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a03b4af2d9a04735bbc7e7d6331d220d4}\label{class_pasyans_cover_u_w_p_1_1_game_page_a03b4af2d9a04735bbc7e7d6331d220d4}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Check\+Rows@{Check\+Rows}}
+\index{Check\+Rows@{Check\+Rows}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Check\+Rows()}{CheckRows()}}
+{\footnotesize\ttfamily bool Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Check\+Rows (\begin{DoxyParamCaption}\item[{int}]{minN,  }\item[{int}]{maxN,  }\item[{int}]{N }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Проверка на окончание игры №1. 
+
+\begin{DoxyAuthor}{Автор}
+Евгений 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+B\+E\+TA 0.\+2.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+Ноябрь 2017 года
+\end{DoxyDate}
+Основная процедура, для окончания. Проверяет что первая карта (туз) и все последующие за ней совпадают по алгоритму. 
+\begin{DoxyParams}{Аргументы}
+{\em minN} & первая N (туз)  maxN последний N \\
+\hline
+{\em N} & Счётчик, который проверяет карты после туза. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Если карты не соответсвуют алгоритму, который используется в пасьянсе ковёр для конкретного ряда карт, то функция возвратит False, если соответсвует, то True. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_ac8a85033f2127c25b60c0f0c82e7eefb}\label{class_pasyans_cover_u_w_p_1_1_game_page_ac8a85033f2127c25b60c0f0c82e7eefb}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Game\+\_\+\+Loaded@{Game\+\_\+\+Loaded}}
+\index{Game\+\_\+\+Loaded@{Game\+\_\+\+Loaded}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Game\+\_\+\+Loaded()}{Game\_Loaded()}}
+{\footnotesize\ttfamily void Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Game\+\_\+\+Loaded (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Routed\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Процедура, срабатывающая при загрузке страницы. 
+
+\begin{DoxyAuthor}{Автор}
+Евгений 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+B\+E\+TA 0.\+2.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+Ноябрь 2017 года
+\end{DoxyDate}
+При загрузке страницы карты расставляются по своим местам только благодаря данной процедуре. Без этой процедуры ничего бы этого не работало. 
+\begin{DoxyParams}{Аргументы}
+{\em sender} & Содержит в себе информацию, о том, что сделал пользователь. \\
+\hline
+{\em e} & Содержит информацию о состоянии и данные события, связанные с маршрутизируемым событием. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a062bef918b47d0786b00d1f1738fdfa8}\label{class_pasyans_cover_u_w_p_1_1_game_page_a062bef918b47d0786b00d1f1738fdfa8}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Game\+\_\+\+Size\+Changed@{Game\+\_\+\+Size\+Changed}}
+\index{Game\+\_\+\+Size\+Changed@{Game\+\_\+\+Size\+Changed}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Game\+\_\+\+Size\+Changed()}{Game\_SizeChanged()}}
+{\footnotesize\ttfamily void Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Game\+\_\+\+Size\+Changed (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Size\+Changed\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Событие изменения размера приложения. 
+
+\begin{DoxyAuthor}{Автор}
+Евгений 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+B\+E\+TA 0.\+2.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+Ноябрь 2017 года 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Аргументы}
+{\em sender} & Содержит в себе информацию, о том, что сделал пользователь. \\
+\hline
+{\em e} & Предоставляет данные, связанные с событием изменения размера. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a573a74360ad3cd3f0b191668a7c69e93}\label{class_pasyans_cover_u_w_p_1_1_game_page_a573a74360ad3cd3f0b191668a7c69e93}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Image\+\_\+\+Drag\+Over@{Image\+\_\+\+Drag\+Over}}
+\index{Image\+\_\+\+Drag\+Over@{Image\+\_\+\+Drag\+Over}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Image\+\_\+\+Drag\+Over()}{Image\_DragOver()}}
+{\footnotesize\ttfamily void Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Image\+\_\+\+Drag\+Over (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Drag\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Событие происходит при наведении одной карты на другую. 
+
+\begin{DoxyAuthor}{Автор}
+Евгений 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+B\+E\+TA 0.\+2.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+Ноябрь 2017 года
+\end{DoxyDate}
+При наведении одной карты на другую, это событие добавит рядом с картами надпись \char`\"{}Попробоваь перенести\char`\"{}. 
+\begin{DoxyParams}{Аргументы}
+{\em sender} & Содержит в себе информацию, о том, что сделал пользователь. \\
+\hline
+{\em e} & Представляет собой данные для событий перетаскивания. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_aa682318ae23a5287134042c6fee5bd21}\label{class_pasyans_cover_u_w_p_1_1_game_page_aa682318ae23a5287134042c6fee5bd21}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Image\+\_\+\+Drop@{Image\+\_\+\+Drop}}
+\index{Image\+\_\+\+Drop@{Image\+\_\+\+Drop}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Image\+\_\+\+Drop()}{Image\_Drop()}}
+{\footnotesize\ttfamily async void Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Image\+\_\+\+Drop (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Drag\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Событие, срабатывающее при переносе карты на другую. 
+
+\begin{DoxyAuthor}{Автор}
+Евгений 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+B\+E\+TA 0.\+2.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+Ноябрь 2017 года
+\end{DoxyDate}
+Если переносимая карта будет отличаться от карты, стоящей слева от карты, которую заменяют на 1 единицу, то она переместится. 
+\begin{DoxyParams}{Аргументы}
+{\em sender} & Содержит в себе информацию, о том, что сделал пользователь. \\
+\hline
+{\em e} & Предоставляет данные для событий перетаскивания. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a204ffa1fc3084fe28bef4826572bbc22}\label{class_pasyans_cover_u_w_p_1_1_game_page_a204ffa1fc3084fe28bef4826572bbc22}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Restart\+Button\+\_\+\+Click@{Restart\+Button\+\_\+\+Click}}
+\index{Restart\+Button\+\_\+\+Click@{Restart\+Button\+\_\+\+Click}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Restart\+Button\+\_\+\+Click()}{RestartButton\_Click()}}
+{\footnotesize\ttfamily void Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Restart\+Button\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Routed\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Начинание игры заново. 
+
+\begin{DoxyAuthor}{Автор}
+Евгений 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+B\+E\+TA 0.\+2.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+Ноябрь 2017 года
+\end{DoxyDate}
+Если пользователь нажмет на кнопку \char`\"{}Начать заново\char`\"{}, то эта процедура перемешает все карты заново. 
+\begin{DoxyParams}{Аргументы}
+{\em sender} & Содержит в себе информацию, о том, что сделал пользователь. \\
+\hline
+{\em e} & Содержит информацию о состоянии и данные события, связанные с маршрутизируемым событием. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a90a511fcd533f56ae276b2eab9751e20}\label{class_pasyans_cover_u_w_p_1_1_game_page_a90a511fcd533f56ae276b2eab9751e20}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Return\+To\+Menu\+\_\+\+Click@{Return\+To\+Menu\+\_\+\+Click}}
+\index{Return\+To\+Menu\+\_\+\+Click@{Return\+To\+Menu\+\_\+\+Click}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Return\+To\+Menu\+\_\+\+Click()}{ReturnToMenu\_Click()}}
+{\footnotesize\ttfamily void Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Return\+To\+Menu\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Routed\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Перемещение в меню. 
+
+\begin{DoxyAuthor}{Автор}
+Евгений 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+B\+E\+TA 0.\+2.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+Ноябрь 2017 года
+\end{DoxyDate}
+Если пользователь нажмет на кнопку \char`\"{}перейти в меню\char`\"{}, то эта процедура выведет его в меню. 
+\begin{DoxyParams}{Аргументы}
+{\em sender} & Содержит в себе информацию, о том, что сделал пользователь. \\
+\hline
+{\em e} & Содержит информацию о состоянии и данные события, связанные с маршрутизируемым событием. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a4d7e48fd54d238c77192dc04fb3f64a4}\label{class_pasyans_cover_u_w_p_1_1_game_page_a4d7e48fd54d238c77192dc04fb3f64a4}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Save\+Image\+Inside@{Save\+Image\+Inside}}
+\index{Save\+Image\+Inside@{Save\+Image\+Inside}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Save\+Image\+Inside()}{SaveImageInside()}}
+{\footnotesize\ttfamily void Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Save\+Image\+Inside (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Routed\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Сохраняет данные, передаваемые пользователем в переменную. 
+
+\begin{DoxyAuthor}{Автор}
+Евгений 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+B\+E\+TA 0.\+2.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+Ноябрь 2017 года
+\end{DoxyDate}
+Сохраняет данные от sender и передает их в переменную global\+\_\+save. 
+\begin{DoxyParams}{Аргументы}
+{\em sender} & Содержит в себе информацию, о том, что сделал пользователь. \\
+\hline
+{\em e} & Содержит информацию о состоянии и данные события, связанные с маршрутизируемым событием. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a4de163f8a87e5dac6f4ef06360cdaa40}\label{class_pasyans_cover_u_w_p_1_1_game_page_a4de163f8a87e5dac6f4ef06360cdaa40}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Set\+False\+Winner\+Check\+Mode@{Set\+False\+Winner\+Check\+Mode}}
+\index{Set\+False\+Winner\+Check\+Mode@{Set\+False\+Winner\+Check\+Mode}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Set\+False\+Winner\+Check\+Mode()}{SetFalseWinnerCheckMode()}}
+{\footnotesize\ttfamily void Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Set\+False\+Winner\+Check\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Выключение режима победителя 
+
+\begin{DoxyAuthor}{Автор}
+Евгений 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+B\+E\+TA 0.\+2.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+Ноябрь 2017 года
+\end{DoxyDate}
+Выключение реализуется благодаря переменной Winner\+Mode\+Check. \mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a321f58ca276bdbc44b53589d75206a75}\label{class_pasyans_cover_u_w_p_1_1_game_page_a321f58ca276bdbc44b53589d75206a75}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Set\+True\+Winner\+Check\+Mode@{Set\+True\+Winner\+Check\+Mode}}
+\index{Set\+True\+Winner\+Check\+Mode@{Set\+True\+Winner\+Check\+Mode}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Set\+True\+Winner\+Check\+Mode()}{SetTrueWinnerCheckMode()}}
+{\footnotesize\ttfamily void Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Set\+True\+Winner\+Check\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Включение режима победителя 
+
+\begin{DoxyAuthor}{Автор}
+Евгений 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+B\+E\+TA 0.\+2.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+Ноябрь 2017 года
+\end{DoxyDate}
+Включение реализуется благодаря переменной Winner\+Mode\+Check. \mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_ab96dd33188b7ebb2a6f40110fe2d4cb5}\label{class_pasyans_cover_u_w_p_1_1_game_page_ab96dd33188b7ebb2a6f40110fe2d4cb5}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Triggered@{Triggered}}
+\index{Triggered@{Triggered}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Triggered()}{Triggered()}}
+{\footnotesize\ttfamily void Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Triggered (\begin{DoxyParamCaption}\item[{double}]{Size\+Resize }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Процедура для адаптивного дизайна. 
+
+\begin{DoxyAuthor}{Автор}
+Евгений 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+B\+E\+TA 0.\+2.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+Ноябрь 2017 года
+\end{DoxyDate}
+В этой процедуре происходит смена расстояния между картами. 
+\begin{DoxyParams}{Аргументы}
+{\em Size\+Resize} & значение ширины экрана на данный момент у пользователя. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Поля}
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_ab0e63c0232b1953700a7765c3725c9d1}\label{class_pasyans_cover_u_w_p_1_1_game_page_ab0e63c0232b1953700a7765c3725c9d1}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Adaptive\+Design\+Kostil1@{Adaptive\+Design\+Kostil1}}
+\index{Adaptive\+Design\+Kostil1@{Adaptive\+Design\+Kostil1}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Adaptive\+Design\+Kostil1}{AdaptiveDesignKostil1}}
+{\footnotesize\ttfamily const int Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Adaptive\+Design\+Kostil1 = 900\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\char`\"{}Костыль\char`\"{} для адаптивного дизайна. Благодаря этой координате первые карты слева получают возможность быть адаптивными. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a367926b010ff358ac0648ef18d176a7a}\label{class_pasyans_cover_u_w_p_1_1_game_page_a367926b010ff358ac0648ef18d176a7a}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Adaptive\+Design\+Kostil2@{Adaptive\+Design\+Kostil2}}
+\index{Adaptive\+Design\+Kostil2@{Adaptive\+Design\+Kostil2}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Adaptive\+Design\+Kostil2}{AdaptiveDesignKostil2}}
+{\footnotesize\ttfamily const int Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Adaptive\+Design\+Kostil2 = 1128\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\char`\"{}Костыль\char`\"{} для адаптивного дизайна. Благодаря этой координате первые карты слева получают возможность быть адаптивными. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a00d87ca420d0de18549672216f60e196}\label{class_pasyans_cover_u_w_p_1_1_game_page_a00d87ca420d0de18549672216f60e196}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Adaptive\+Design\+Standart\+Multiplication@{Adaptive\+Design\+Standart\+Multiplication}}
+\index{Adaptive\+Design\+Standart\+Multiplication@{Adaptive\+Design\+Standart\+Multiplication}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Adaptive\+Design\+Standart\+Multiplication}{AdaptiveDesignStandartMultiplication}}
+{\footnotesize\ttfamily const double Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Adaptive\+Design\+Standart\+Multiplication = 0.\+1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Стандартное умножение для работы адаптивного дизайна. Текущий размер по ширине умножается на это число и карты начинают располагаться так, как нужно. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a128b0510c61dbb4bc48f6fadffe2cbf8}\label{class_pasyans_cover_u_w_p_1_1_game_page_a128b0510c61dbb4bc48f6fadffe2cbf8}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Best\+Image\+Data\+Saver@{Best\+Image\+Data\+Saver}}
+\index{Best\+Image\+Data\+Saver@{Best\+Image\+Data\+Saver}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Best\+Image\+Data\+Saver}{BestImageDataSaver}}
+{\footnotesize\ttfamily Image \mbox{[}$\,$\mbox{]} Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Best\+Image\+Data\+Saver = new Image\mbox{[}\hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_af512b41a55021eba0dafb53dac089916}{Default\+Array\+Size}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Массив, хранящий все карты, которые имеются на странице. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a4749dec0871a8794a50eace45a1f6db1}\label{class_pasyans_cover_u_w_p_1_1_game_page_a4749dec0871a8794a50eace45a1f6db1}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Best\+Magic\+Array\+For\+Best\+Magic\+Cards@{Best\+Magic\+Array\+For\+Best\+Magic\+Cards}}
+\index{Best\+Magic\+Array\+For\+Best\+Magic\+Cards@{Best\+Magic\+Array\+For\+Best\+Magic\+Cards}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Best\+Magic\+Array\+For\+Best\+Magic\+Cards}{BestMagicArrayForBestMagicCards}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Best\+Magic\+Array\+For\+Best\+Magic\+Cards = new int\mbox{[}\hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_af512b41a55021eba0dafb53dac089916}{Default\+Array\+Size}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Массив, хранящий все значения карт, которые имеются на странице. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_aff9c7aa4353b39d3d9372aaa0fa1fbb3}\label{class_pasyans_cover_u_w_p_1_1_game_page_aff9c7aa4353b39d3d9372aaa0fa1fbb3}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Best\+Magic\+Card@{Best\+Magic\+Card}}
+\index{Best\+Magic\+Card@{Best\+Magic\+Card}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Best\+Magic\+Card}{BestMagicCard}}
+{\footnotesize\ttfamily Image Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Best\+Magic\+Card\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Макет карты, с которым производится работа в процедуре. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_ae00bab0ead88cf9738f730eb1ef7c055}\label{class_pasyans_cover_u_w_p_1_1_game_page_ae00bab0ead88cf9738f730eb1ef7c055}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Check\+Initialization@{Check\+Initialization}}
+\index{Check\+Initialization@{Check\+Initialization}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Check\+Initialization}{CheckInitialization}}
+{\footnotesize\ttfamily bool Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Check\+Initialization = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка инициализации карт, чтобы их нельзя было делать адаптивными до того, как они появятся. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a27a1a6eef955f572e3863062d33d2bc7}\label{class_pasyans_cover_u_w_p_1_1_game_page_a27a1a6eef955f572e3863062d33d2bc7}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Club\+Ace@{Club\+Ace}}
+\index{Club\+Ace@{Club\+Ace}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Club\+Ace}{ClubAce}}
+{\footnotesize\ttfamily const int Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Club\+Ace = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Расположение туза треф в колоде по-\/умолчанию. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a80770c7db0993da166101ef31303ebce}\label{class_pasyans_cover_u_w_p_1_1_game_page_a80770c7db0993da166101ef31303ebce}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!CordX@{CordX}}
+\index{CordX@{CordX}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{CordX}{CordX}}
+{\footnotesize\ttfamily double Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+CordX = 10\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Координата X на странице. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a6a952abad53185856ccbaa26b846b6c4}\label{class_pasyans_cover_u_w_p_1_1_game_page_a6a952abad53185856ccbaa26b846b6c4}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!CordY@{CordY}}
+\index{CordY@{CordY}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{CordY}{CordY}}
+{\footnotesize\ttfamily double Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+CordY = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Координата Y на странице. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_af512b41a55021eba0dafb53dac089916}\label{class_pasyans_cover_u_w_p_1_1_game_page_af512b41a55021eba0dafb53dac089916}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Default\+Array\+Size@{Default\+Array\+Size}}
+\index{Default\+Array\+Size@{Default\+Array\+Size}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Default\+Array\+Size}{DefaultArraySize}}
+{\footnotesize\ttfamily const int Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Default\+Array\+Size = 40\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+К количеству карт по-\/умолчанию ещё добавляются 4 пустые карты. Это полное кол-\/во карт, которое будет располагаться на странице. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a5458c54c117e7ff5f98235839e596943}\label{class_pasyans_cover_u_w_p_1_1_game_page_a5458c54c117e7ff5f98235839e596943}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Default\+Card\+Height@{Default\+Card\+Height}}
+\index{Default\+Card\+Height@{Default\+Card\+Height}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Default\+Card\+Height}{DefaultCardHeight}}
+{\footnotesize\ttfamily const int Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Default\+Card\+Height = 99\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Стандартная высота карты. Она используется при динамическом создании карты. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a44897cf4110fd61d040588f182178def}\label{class_pasyans_cover_u_w_p_1_1_game_page_a44897cf4110fd61d040588f182178def}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Default\+Card\+Number@{Default\+Card\+Number}}
+\index{Default\+Card\+Number@{Default\+Card\+Number}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Default\+Card\+Number}{DefaultCardNumber}}
+{\footnotesize\ttfamily const int Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Default\+Card\+Number = 36\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Количество карт по-\/умолчанию. Это версия игры на 36 карт, поэтому их 36. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a11ecf48c9c1ae48e3b1bf8c287cbc909}\label{class_pasyans_cover_u_w_p_1_1_game_page_a11ecf48c9c1ae48e3b1bf8c287cbc909}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Default\+Card\+Width@{Default\+Card\+Width}}
+\index{Default\+Card\+Width@{Default\+Card\+Width}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Default\+Card\+Width}{DefaultCardWidth}}
+{\footnotesize\ttfamily const int Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Default\+Card\+Width = 74\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Стандартная ширина карты. Она используется при динамическом создании карты. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_aa3cf4f53575e93818fffbdf3c04384ed}\label{class_pasyans_cover_u_w_p_1_1_game_page_aa3cf4f53575e93818fffbdf3c04384ed}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Default\+Col\+Number@{Default\+Col\+Number}}
+\index{Default\+Col\+Number@{Default\+Col\+Number}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Default\+Col\+Number}{DefaultColNumber}}
+{\footnotesize\ttfamily const int Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Default\+Col\+Number = 10\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Количество карт в одном ряде. Их всего 10. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a2274460b85cbcd4a6d15edbf55a7b1d0}\label{class_pasyans_cover_u_w_p_1_1_game_page_a2274460b85cbcd4a6d15edbf55a7b1d0}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Default\+Empty\+Card\+Value@{Default\+Empty\+Card\+Value}}
+\index{Default\+Empty\+Card\+Value@{Default\+Empty\+Card\+Value}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Default\+Empty\+Card\+Value}{DefaultEmptyCardValue}}
+{\footnotesize\ttfamily const int Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Default\+Empty\+Card\+Value = 99\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Пустая карта обозначается как 99. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_ab7c545b8afa290af58491cbcdd2c785f}\label{class_pasyans_cover_u_w_p_1_1_game_page_ab7c545b8afa290af58491cbcdd2c785f}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Default\+Row\+Number@{Default\+Row\+Number}}
+\index{Default\+Row\+Number@{Default\+Row\+Number}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Default\+Row\+Number}{DefaultRowNumber}}
+{\footnotesize\ttfamily const int Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Default\+Row\+Number = 4\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Количество рядов с картами внутри игры. Их 4. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a086c2eca6aa451a0dd28f5dafc09cf46}\label{class_pasyans_cover_u_w_p_1_1_game_page_a086c2eca6aa451a0dd28f5dafc09cf46}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Diamond\+Ace@{Diamond\+Ace}}
+\index{Diamond\+Ace@{Diamond\+Ace}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Diamond\+Ace}{DiamondAce}}
+{\footnotesize\ttfamily const int Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Diamond\+Ace = 27\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Расположение туза бубен в колоде по-\/умолчанию. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_ae99d856c36c65337c9b2d029d6b348d4}\label{class_pasyans_cover_u_w_p_1_1_game_page_ae99d856c36c65337c9b2d029d6b348d4}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!End\+Four\+Epty\+Card\+Position@{End\+Four\+Epty\+Card\+Position}}
+\index{End\+Four\+Epty\+Card\+Position@{End\+Four\+Epty\+Card\+Position}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{End\+Four\+Epty\+Card\+Position}{EndFourEptyCardPosition}}
+{\footnotesize\ttfamily const int Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+End\+Four\+Epty\+Card\+Position = 39\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Последяя карта в четвертом ряде. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_ab5e0a4bb6c6e77d8f725182748803fc7}\label{class_pasyans_cover_u_w_p_1_1_game_page_ab5e0a4bb6c6e77d8f725182748803fc7}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!End\+One\+Epty\+Card\+Position@{End\+One\+Epty\+Card\+Position}}
+\index{End\+One\+Epty\+Card\+Position@{End\+One\+Epty\+Card\+Position}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{End\+One\+Epty\+Card\+Position}{EndOneEptyCardPosition}}
+{\footnotesize\ttfamily const int Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+End\+One\+Epty\+Card\+Position = 9\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Последняя карта в первом ряде. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a02e5496db08f9378c5e45e5fb1f082a1}\label{class_pasyans_cover_u_w_p_1_1_game_page_a02e5496db08f9378c5e45e5fb1f082a1}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!End\+Three\+Epty\+Card\+Position@{End\+Three\+Epty\+Card\+Position}}
+\index{End\+Three\+Epty\+Card\+Position@{End\+Three\+Epty\+Card\+Position}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{End\+Three\+Epty\+Card\+Position}{EndThreeEptyCardPosition}}
+{\footnotesize\ttfamily const int Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+End\+Three\+Epty\+Card\+Position = 29\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Последняя карта в третьем ряде. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a8e347fd1f214283527b2cb865f4ee9b0}\label{class_pasyans_cover_u_w_p_1_1_game_page_a8e347fd1f214283527b2cb865f4ee9b0}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!End\+Two\+Epty\+Card\+Position@{End\+Two\+Epty\+Card\+Position}}
+\index{End\+Two\+Epty\+Card\+Position@{End\+Two\+Epty\+Card\+Position}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{End\+Two\+Epty\+Card\+Position}{EndTwoEptyCardPosition}}
+{\footnotesize\ttfamily const int Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+End\+Two\+Epty\+Card\+Position = 19\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Последняя карта во втором ряде. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a08f63dfbfa1adc1774f5dbfaad379cde}\label{class_pasyans_cover_u_w_p_1_1_game_page_a08f63dfbfa1adc1774f5dbfaad379cde}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!global\+\_\+save@{global\+\_\+save}}
+\index{global\+\_\+save@{global\+\_\+save}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{global\+\_\+save}{global\_save}}
+{\footnotesize\ttfamily Image Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+global\+\_\+save\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Копия карты, которую пользователь начинает передвигать 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a8214dbd1854ae65cd9f59b3f8246910b}\label{class_pasyans_cover_u_w_p_1_1_game_page_a8214dbd1854ae65cd9f59b3f8246910b}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Heart\+Ace@{Heart\+Ace}}
+\index{Heart\+Ace@{Heart\+Ace}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Heart\+Ace}{HeartAce}}
+{\footnotesize\ttfamily const int Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Heart\+Ace = 9\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Расположение туза черв в колоде по-\/умолчанию. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_ace653fbd9e4a20124d9591f75748738e}\label{class_pasyans_cover_u_w_p_1_1_game_page_ace653fbd9e4a20124d9591f75748738e}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Null\+Row@{Null\+Row}}
+\index{Null\+Row@{Null\+Row}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Null\+Row}{NullRow}}
+{\footnotesize\ttfamily const int Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Null\+Row = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Первый ряд карт. Поскольку это с\#, то все начинается с 0, а не 1. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a120ab62da97a1692416b0840ef726e49}\label{class_pasyans_cover_u_w_p_1_1_game_page_a120ab62da97a1692416b0840ef726e49}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!One\+Row@{One\+Row}}
+\index{One\+Row@{One\+Row}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{One\+Row}{OneRow}}
+{\footnotesize\ttfamily const int Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+One\+Row = 10\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Второй ряд карт. Поскольку это с\#, то все начинается с 0, а не 1. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_aeb2b54ad9c536fab826a7a7f1447f3da}\label{class_pasyans_cover_u_w_p_1_1_game_page_aeb2b54ad9c536fab826a7a7f1447f3da}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Set\+And\+Get\+Best\+Magic\+Card\+Image\+Value\+Property@{Set\+And\+Get\+Best\+Magic\+Card\+Image\+Value\+Property}}
+\index{Set\+And\+Get\+Best\+Magic\+Card\+Image\+Value\+Property@{Set\+And\+Get\+Best\+Magic\+Card\+Image\+Value\+Property}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Set\+And\+Get\+Best\+Magic\+Card\+Image\+Value\+Property}{SetAndGetBestMagicCardImageValueProperty}}
+{\footnotesize\ttfamily readonly Dependency\+Property Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Set\+And\+Get\+Best\+Magic\+Card\+Image\+Value\+Property\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Инициализатор}
+\begin{DoxyCode}
+=
+            DependencyProperty.RegisterAttached(\textcolor{stringliteral}{"Set"}, typeof(\textcolor{keywordtype}{int}), typeof(
+      \hyperlink{class_pasyans_cover_u_w_p_1_1_game_page_ae93f35d902ec5fbb566632b0dc5e0b59}{GamePage}), \textcolor{keyword}{new} PropertyMetadata(\textcolor{keyword}{false}))
+\end{DoxyCode}
+
+
+Переменная, которая позволяет привязывать значения карт прямо к I\+M\+A\+GE. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_afaebf6ffd47185bb4fa3b7a868eab00d}\label{class_pasyans_cover_u_w_p_1_1_game_page_afaebf6ffd47185bb4fa3b7a868eab00d}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Spade\+Ace@{Spade\+Ace}}
+\index{Spade\+Ace@{Spade\+Ace}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Spade\+Ace}{SpadeAce}}
+{\footnotesize\ttfamily const int Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Spade\+Ace = 18\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Расположение туза пик в колоде по-\/умолчанию. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_aa61e21ef4cdac5b45ff280528dc5611e}\label{class_pasyans_cover_u_w_p_1_1_game_page_aa61e21ef4cdac5b45ff280528dc5611e}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Standart\+Cord\+X\+Change@{Standart\+Cord\+X\+Change}}
+\index{Standart\+Cord\+X\+Change@{Standart\+Cord\+X\+Change}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Standart\+Cord\+X\+Change}{StandartCordXChange}}
+{\footnotesize\ttfamily const int Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Standart\+Cord\+X\+Change = 85\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Стандартное изменение координаты Х при расстановке карт. В новых обновлениях эта константа роли играет мало, т.\+к появился адаптивный дизайн. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a35b73571b9f97eec178604f4459d1af2}\label{class_pasyans_cover_u_w_p_1_1_game_page_a35b73571b9f97eec178604f4459d1af2}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Standart\+Cord\+Y\+Change@{Standart\+Cord\+Y\+Change}}
+\index{Standart\+Cord\+Y\+Change@{Standart\+Cord\+Y\+Change}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Standart\+Cord\+Y\+Change}{StandartCordYChange}}
+{\footnotesize\ttfamily const int Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Standart\+Cord\+Y\+Change = 120\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Стандартное изменение координаты Y при расстановке карт. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a4ad4b7e54cbe7dad538eb1eb3c4f9690}\label{class_pasyans_cover_u_w_p_1_1_game_page_a4ad4b7e54cbe7dad538eb1eb3c4f9690}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Start\+CordX@{Start\+CordX}}
+\index{Start\+CordX@{Start\+CordX}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Start\+CordX}{StartCordX}}
+{\footnotesize\ttfamily const int Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Start\+CordX = 10\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Координата Х по умолчанию слева. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_aabcd571572c00c2e8f761cf220555357}\label{class_pasyans_cover_u_w_p_1_1_game_page_aabcd571572c00c2e8f761cf220555357}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Three\+Row@{Three\+Row}}
+\index{Three\+Row@{Three\+Row}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Three\+Row}{ThreeRow}}
+{\footnotesize\ttfamily const int Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Three\+Row = 30\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Четвертый ряд карт. Поскольку это с\#, то все начинается с 0, а не 1. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a815d76a3c2a50ae107f10275e2574285}\label{class_pasyans_cover_u_w_p_1_1_game_page_a815d76a3c2a50ae107f10275e2574285}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Two\+Row@{Two\+Row}}
+\index{Two\+Row@{Two\+Row}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Two\+Row}{TwoRow}}
+{\footnotesize\ttfamily const int Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Two\+Row = 20\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Третий ряд карт. Поскольку это с\#, то все начинается с 0, а не 1. 
+
+\mbox{\Hypertarget{class_pasyans_cover_u_w_p_1_1_game_page_a2bf9a3300a4ab635aeb61d6cf6c2ee13}\label{class_pasyans_cover_u_w_p_1_1_game_page_a2bf9a3300a4ab635aeb61d6cf6c2ee13}} 
+\index{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}!Winner\+Mode\+Check@{Winner\+Mode\+Check}}
+\index{Winner\+Mode\+Check@{Winner\+Mode\+Check}!Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page@{Pasyans\+Cover\+U\+W\+P\+::\+Game\+Page}}
+\subsubsection{\texorpdfstring{Winner\+Mode\+Check}{WinnerModeCheck}}
+{\footnotesize\ttfamily bool Pasyans\+Cover\+U\+W\+P.\+Game\+Page.\+Winner\+Mode\+Check = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Переменная, которая используется в качестве облегчения игры для пользователей. Благодаря ей, пользователь сам решает для себя -\/ прошел он игру или нет. 
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/Евгений/\+Documents/\+Visual Studio 2017/\+Projects/\+Pasyans\+Cover\+U\+W\+P/\+Pasyans\+Cover\+U\+W\+P/\hyperlink{_game_page_8xaml_8cs}{Game\+Page.\+xaml.\+cs}\end{DoxyCompactItemize}
