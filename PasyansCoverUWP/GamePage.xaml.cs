@@ -116,7 +116,7 @@ namespace PasyansCoverUWP
             \param sender Содержит в себе информацию, о том, что сделал пользователь. 
             \param e Содержит информацию о состоянии и данные события, связанные с маршрутизируемым событием.    
         */
-        private async Task LoadCards()
+        private void LoadCards()
         {
             var i = 0; var j = 0; int[] TMPArrayBest = new int[4];
             if (WinnerModeCheck)
@@ -228,17 +228,13 @@ namespace PasyansCoverUWP
             LoadingIndicator.Visibility = Visibility.Collapsed;
             for (i = 0; i < DefaultArraySize; i++)
             {
-                 await Task.Run(() =>
-                 {
-                     var test = new MessageDialog(Task.CurrentId.ToString(), "test");
-                     BestImageDataSaver[i].Visibility = Visibility.Visible;
-                 });
+                BestImageDataSaver[i].Visibility = Visibility.Visible;
             }
         }
 
-        private async void Game_Loaded(object sender, RoutedEventArgs e)
+        private void Game_Loaded(object sender, RoutedEventArgs e)
         {
-            await LoadCards();
+            LoadCards();
         }
 
 
